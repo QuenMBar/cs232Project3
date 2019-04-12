@@ -1,5 +1,5 @@
-// CS-232
-// Paul Jeon
+/** Path.h is the header file for Path.cpp
+ */
 
 #ifndef PATH_H_
 #define PATH_H_
@@ -16,13 +16,13 @@ using namespace std;
 
 class Path
 {
-public:
-  Path();
-  int find(const string &program) const;
-  string getDirectory(int i) const;
+  public:
+    Path();
+    int find(const string &program) const;
+    char *getDirectory(int i) const;
 
-private:
-  vector<char *> dirVec;
+  private:
+    vector<string> dirVec;
 };
 
 #endif

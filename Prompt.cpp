@@ -1,5 +1,5 @@
-// CS-232
-// Paul Jeon
+/** Prompt.cpp represents the command-line prompt.
+ */
 
 #include "Prompt.h"
 
@@ -8,9 +8,11 @@
 
 using namespace std;
 
-// Prompt()
-// constructor
 
+/** A constructor that builds a Prompt as the full path to the working directory
+ * Receives: N/a
+ * Passes: N/a
+ */
 Prompt::Prompt()
 {
 
@@ -19,9 +21,10 @@ Prompt::Prompt()
 	myDir = getcwd(myPath, PATH_MAX + 1);
 }
 
-// get() function
-// Return the current directory as string
-
+/** An accessor that returns the current value of the Prompt.
+ * Receives: N/a
+ * Passes: myDir
+ */
 string Prompt::get() const
 {
 	return myDir;

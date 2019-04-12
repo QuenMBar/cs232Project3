@@ -1,5 +1,6 @@
-// CS-232
-// Paul Jeon
+/**Path.cpp represents the directories in which QPShell searches for the executable
+ * programs.
+ */
 
 #include "Path.h"
 
@@ -13,9 +14,11 @@
 
 using namespace std;
 
-// Path()
-// Path class constructor
-
+/**
+ * Constructs a Path from PATH environment variable
+ * Receives: N/a
+ * Passes: N/a
+ */
 Path::Path()
 {
     char *token;
@@ -34,11 +37,11 @@ Path::Path()
     }
 }
 
-// find function
-// searches dirVec for a given program
-// string program - name of desired program
-// return: index of dirVec containing the desired program
-
+/**
+ * Returns the index of the directory containing program.
+ * Receives: string &program
+ * Passes: index of dirVec containing the desired program
+ */
 int Path::find(const string &program) const
 {
     int index = 0;
@@ -63,11 +66,11 @@ int Path::find(const string &program) const
     return index;
 }
 
-// getDirectory(int i)
-// getter for dirVec
-// parameter: int i
-// returns: string path at index
-
+/**
+ * Returns the name of the directory whose index is i.
+ * Receives: i, an int
+ * Passes: myDir (string path at index i)
+ */
 string Path::getDirectory(int i) const
 {
     string myDir = dirVec[i];

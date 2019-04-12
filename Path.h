@@ -1,4 +1,7 @@
 /** Path.h is the header file for Path.cpp
+ * 
+ * Written by: Paul Jeon
+ * Date: April 12, 2019
  */
 
 #ifndef PATH_H_
@@ -19,10 +22,10 @@ class Path
   public:
     Path();
     int find(const string &program) const;
-    char *getDirectory(int i) const;
+    string getDirectory(int i) const;
 
-  private:
-    vector<string> dirVec;
+private:
+    vector<char *> dirVec;
 };
 
 #endif

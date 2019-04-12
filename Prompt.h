@@ -1,4 +1,7 @@
 /** Prompt.h is the header file for Prompt.cpp
+ * 
+ * Written by: Paul Jeon
+ * Date: April 12, 2019
  */
 
 #ifndef PROMPT_H_

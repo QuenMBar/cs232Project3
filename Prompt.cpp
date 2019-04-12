@@ -1,4 +1,7 @@
 /** Prompt.cpp represents the command-line prompt.
+ * 
+ * Written by: Paul Jeon
+ * Date: April 12, 2019
  */
 
 #include "Prompt.h"

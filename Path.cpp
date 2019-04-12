@@ -1,5 +1,8 @@
 /**Path.cpp represents the directories in which QPShell searches for the executable
  * programs.
+ * 
+ * Written by: Paul Jeon
+ * Date: April 12, 2019
  */
 
 #include "Path.h"

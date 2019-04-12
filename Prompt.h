@@ -1,5 +1,5 @@
-// CS-232
-// Paul Jeon
+/** Prompt.h is the header file for Prompt.cpp
+ */
 
 #ifndef PROMPT_H_
 #define PROMPT_H_
